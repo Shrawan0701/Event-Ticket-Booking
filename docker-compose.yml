@@ -25,6 +25,9 @@ services:
     command: start-dev
 
 
+
+
 volumes:
        keycloak-data:
          driver: local
+
