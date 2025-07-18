@@ -4,24 +4,24 @@ A Spring Boot application for managing events and ticket bookings with role-base
 
 🔧 Tech Stack
 
-Backend: Java, Spring Boot, Spring Data JPA, Spring Security (OAuth2 / JWT)
+1.Backend: Java, Spring Boot, Spring Data JPA, Spring Security (OAuth2 / JWT)
 
-Database: PostgreSQL
+2.Database: PostgreSQL
 
-Authentication: Keycloak (Dockerized)
+3.Authentication: Keycloak (Dockerized)
 
-DevOps: Docker Compose, Adminer (DB GUI)
+4.DevOps: Docker Compose, Adminer (DB GUI)
 
 ✅ Features
 
-Event creation and status management
+1.Event creation and status management
 
-Ticket type and quantity definition
+2.Ticket type and quantity definition
 
-QR code generation for each ticket
+3.QR code generation for each ticket
 
-Ticket validation and status tracking
+4.Ticket validation and status tracking
 
-Secure API access with JWT tokens (via Keycloak)
+5.Secure API access with JWT tokens (via Keycloak)
 
-Admin panel (via Adminer)
+6.Admin panel (via Adminer)
