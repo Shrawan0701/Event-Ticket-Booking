@@ -1,27 +1,60 @@
-🎟️ Event Ticket Booking System
+# BookMyEvent – Event Ticket Booking Platform
 
-A Spring Boot application for managing events and ticket bookings with role-based access control using Keycloak for authentication. This app enables event creation, ticket generation, QR code scanning, and ticket validation.
+##  Architecture
 
-🔧 Tech Stack
+BookMyEvent is a **containerized** microservice-style backend system designed for managing events and tickets. It leverages **role-based access control** with **Keycloak** for authentication and authorization.
 
-1.Backend: Java, Spring Boot, Spring Data JPA, Spring Security (OAuth2 / JWT)
+- The platform is built with **Spring Boot**, using **RESTful APIs** to support event creation, ticketing, and validation workflows.
+- **Keycloak** handles secure login, registration, and admin/user role mapping.
+- The entire app is **containerized using Docker** for easy deployment.
 
-2.Database: PostgreSQL
 
-3.Authentication: Keycloak (Dockerized)
+---
 
-4.DevOps: Docker Compose, Adminer (DB GUI)
+##  Features
 
-✅ Features
+- **Role-Based Authentication** using **Keycloak**
+  - Admin: Create & manage events, monitor ticket scans
+  - User: Book tickets, view their bookings
+-  **Event Management**
+  - Create and update events with details like date, location, capacity
+-  **Ticket Booking**
+  - Generate tickets for registered users
+  - Each ticket contains a **QR Code**
+-  **QR Code Scanning**
+  - Validate tickets using unique identifiers
+-  **Secured Endpoints** based on user roles
 
-1.Event creation and status management
+---
 
-2.Ticket type and quantity definition
+##  Tech Stack
 
-3.QR code generation for each ticket
+### Backend
+- **Java** – Programming Language
+- **Spring Boot** – Microservice framework
+- **Spring Security** – Endpoint protection
+- **Keycloak** – Identity and Access Management
+- **Docker** – Containerization
+- **Maven** – Build and dependency tool
 
-4.Ticket validation and status tracking
+### Database
+- **MySQL** – Relational database for persisting users, events, and tickets
 
-5.Secure API access with JWT tokens (via Keycloak)
+---
 
-6.Admin panel (via Adminer)
+## ⚙️ Running Locally with Docker
+
+```bash
+git clone https://github.com/Shrawan0701/Event-Ticket-Booking
+cd Event-Ticket-Booking
+docker-compose up
+
+```
+
+ ## Contact
+Let's connect and discuss how this system can be extended or improved!
+
+ Email: shrawanrw07@gmail.com
+
+ LinkedIn: https://linkedin.com/in/shrawanwandhekar
+
